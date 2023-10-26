@@ -1,3 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Mulish&family=Nunito:wght@200;600;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -28,6 +31,122 @@
   color: #61dafb;
 }
 
+.mtv {
+  margin-top: 100px;
+}
+
+#color{
+  color: #085bff;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode .card {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode .navbar {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.dark-mode .navbar a {
+  color: #ffffff;
+}
+
+.header_search {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 58%;
+}
+
+.header_search > input{
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.header_search > input:active{
+  border: none;
+}
+
+.header_search1 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  background-color: rgb(219, 219, 219);
+  height: 22px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 40%;
+}
+
+.header_search1 > input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.left-buttons, .right-buttons {
+  margin: 10px;
+  text-align: center;
+}
+
+.share, .info {
+  border: 2px solid gray;
+}
+
+.download {
+  background-color: green;
+  color: white;
+}
+
+.space{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-buttons button, .right-buttons button {
+  margin: 10px auto;
+  padding: 10px 20px 10px 20px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +154,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+
+  .left-buttons, .right-buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-buttons button, .right-buttons button {
+    margin: 5px auto;
+  }
+
+  .social-links {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .space{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_search1{
+    margin: auto;
+    width: 58%;
+  }
+
+
 }
